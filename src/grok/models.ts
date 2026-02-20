@@ -159,6 +159,17 @@ export const MODEL_CONFIG: Record<string, ModelInfo> = {
     default_top_p: 0.95,
     is_video_model: true,
   },
+  "grok-4.20-beta": {
+    grok_model: ["grok-420", "MODEL_MODE_GROK_420"],
+    rate_limit_model: "grok-420",
+    display_name: "GROK-4.20-BETA",
+    description: "Grok 4.20 Beta model",
+    raw_model_path: "xai/grok-420",
+    default_temperature: 1.0,
+    default_max_output_tokens: 8192,
+    supported_max_output_tokens: 131072,
+    default_top_p: 0.95,
+  },
 };
 
 export function isValidModel(model: string): boolean {
