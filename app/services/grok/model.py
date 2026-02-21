@@ -168,15 +168,6 @@ class ModelService:
             description="Video generation model",
             is_video=True
         ),
-        ModelInfo(
-            model_id="grok-4.20-beta",
-            grok_model="grok-420",
-            rate_limit_model="grok-420",
-            model_mode="MODEL_MODE_GROK_420",
-            tier=Tier.BASIC,
-            cost=Cost.LOW,
-            display_name="GROK-4.20-BETA"
-        ),
     ]
     
     _map = {m.model_id: m for m in MODELS}
